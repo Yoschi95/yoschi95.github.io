@@ -1,0 +1,28 @@
+{
+  "name": "Yoschi95",
+  "version": "1.0.0",
+  "description": "Yoschi's portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yoschi95/yoschi95.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yoschi95/yoschi95.github.io/issues"
+  },
+  "homepage": "https://github.com/Yoschi95/yoschi95.github.io#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "prettier": "3.5.0"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
