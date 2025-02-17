@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/Yoschi95/yoschi95.github.io#readme",
   "devDependencies": {
+    "@parcel/packager-raw-url": "^2.13.3",
+    "@parcel/transformer-webmanifest": "^2.13.3",
     "parcel": "^2.13.3",
     "prettier": "3.5.0",
     "process": "^0.11.10"
