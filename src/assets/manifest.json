@@ -1,0 +1,44 @@
+{
+  "short_name": "JH - Portfolio",
+  "name": "Joscha Hartmann - Portfolio",
+  "description": "Portfolio website of Joscha Hartmann",
+  "icons": [
+    {
+      "src": "./icons/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "./images/logo/jh_logo_144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "images/logo/jh_logo.png",
+      "sizes": "781x781",
+      "type": "image/png",
+      "platform": "desktop",
+      "form_factor": "wide",
+      "label": "Logo"
+    },
+    {
+      "src": "images/logo/jh_logo.png",
+      "sizes": "781x781",
+      "type": "image/png",
+      "platform": "mobile",
+      "label": "Logo"
+    }
+  ],
+  "start_url": "/",
+  "id": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "scope": "/",
+  "lang": "de",
+  "dir": "auto"
+}
