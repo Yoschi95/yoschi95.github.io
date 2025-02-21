@@ -1,7 +1,11 @@
+import jh_logo from "../../assets/images/logo/jh_logo.svg";
+import Nav from "./Nav";
+
 function Header() {
   return (
     <header className="header">
-      <h1>Header</h1>
+      <img src={jh_logo} alt="Joscha Hartmann brand logo" />
+      <Nav />
     </header>
   );
 }
