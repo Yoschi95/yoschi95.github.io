@@ -1,0 +1,35 @@
+$bg-color: #d6c8be;
+$primary-font: "Inter";
+
+* {
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background-color: $bg-color;
+  font-family: $primary-font, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  min-height: 100vh;
+  margin-top: 3vh;
+  margin-left: 3vh;
+  margin-right: 3vh;
+  margin-bottom: 3vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: rgb(0, 0, 0);
+}
+
+a:visited {
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  color: #ededed;
+}
