@@ -1,3 +1,5 @@
+import "./Projects.scss";
+
 function Projects() {
   return (
     <main className="projects" id="projects">

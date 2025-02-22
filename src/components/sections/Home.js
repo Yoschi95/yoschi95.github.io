@@ -1,3 +1,5 @@
+import "./Home.scss";
+
 function Home() {
   return (
     <main className="home" id="home">

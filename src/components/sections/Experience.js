@@ -1,3 +1,5 @@
+import "./Experience.scss";
+
 function Experience() {
   return (
     <main className="experience" id="experience">

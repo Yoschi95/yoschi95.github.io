@@ -1,3 +1,5 @@
+import "./About.scss";
+
 function About() {
   return (
     <main className="about" id="about">

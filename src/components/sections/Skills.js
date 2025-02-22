@@ -1,3 +1,5 @@
+import "./Skills.scss";
+
 function Skills() {
   return (
     <main className="skills" id="skills">

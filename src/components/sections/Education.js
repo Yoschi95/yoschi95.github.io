@@ -1,3 +1,5 @@
+import "./Education.scss";
+
 function Education() {
   return (
     <main className="education" id="education">

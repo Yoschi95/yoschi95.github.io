@@ -1,3 +1,5 @@
+import "./Contact.scss";
+
 function Contact() {
   return (
     <main className="contact" id="contact">

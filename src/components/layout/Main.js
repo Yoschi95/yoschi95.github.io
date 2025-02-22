@@ -6,6 +6,7 @@ import Skills from "../sections/Skills";
 import Education from "../sections/Education";
 import Contact from "../sections/Contact";
 import Resume from "../sections/Resume";
+import "./Main.scss";
 
 function Main() {
   return (
