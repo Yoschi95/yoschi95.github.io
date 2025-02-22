@@ -6,7 +6,7 @@ function Header() {
   return (
     <header className="header">
       <a href="#home">
-        <img src={jh_logo} alt="Joscha Hartmann brand logo" class="header-logo" />
+        <img src={jh_logo} alt="Joscha Hartmann brand logo" className="header-logo" />
       </a>
 
       <Nav />

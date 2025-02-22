@@ -11,22 +11,22 @@ function Nav() {
           <a href="#about">About</a>
         </li>
         <li>
-          <a href="#experience">experience</a>
+          <a href="#experience">Experience</a>
         </li>
         <li>
-          <a href="#projects">projects</a>
+          <a href="#projects">Projects</a>
         </li>
         <li>
-          <a href="#skills">skills</a>
+          <a href="#skills">Skills</a>
         </li>
         <li>
-          <a href="#education">education</a>
+          <a href="#education">Education</a>
         </li>
         <li>
-          <a href="#contact">contact</a>
+          <a href="#contact">Contact</a>
         </li>
         <li>
-          <a href="#resume">resume </a>
+          <a href="#resume">Resume </a>
         </li>
       </ul>
     </nav>
