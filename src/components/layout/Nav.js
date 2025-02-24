@@ -1,6 +1,8 @@
 import "./Nav.scss";
 
 function Nav() {
+  //TODO: Replace anchor tags to enable smooth scrolling to sections
+
   return (
     <nav className="navbar">
       <ul>
