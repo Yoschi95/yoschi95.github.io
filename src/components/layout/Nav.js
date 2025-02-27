@@ -1,34 +1,33 @@
 import "./Nav.scss";
+import NavBarButton from "../shared/NavBarButton";
 
 function Nav() {
-  //TODO: Replace anchor tags to enable smooth scrolling to sections
-
   return (
     <nav className="navbar">
       <ul>
         <li>
-          <a href="#home">Home</a>
+          <NavBarButton text="Home" sectionId="home" />
         </li>
         <li>
-          <a href="#about">About</a>
+          <NavBarButton text="About" sectionId="about" />
         </li>
         <li>
-          <a href="#experience">Experience</a>
+          <NavBarButton text="Experience" sectionId="experience" />
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <NavBarButton text="Projects" sectionId="projects" />
         </li>
         <li>
-          <a href="#skills">Skills</a>
+          <NavBarButton text="Skills" sectionId="skills" />
         </li>
         <li>
-          <a href="#education">Education</a>
+          <NavBarButton text="Education" sectionId="education" />
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <NavBarButton text="Contact" sectionId="contact" />
         </li>
         <li>
-          <a href="#resume">Resume </a>
+          <NavBarButton text="Resume" sectionId="resume" />
         </li>
       </ul>
     </nav>
