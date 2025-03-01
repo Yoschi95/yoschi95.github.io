@@ -3,8 +3,9 @@
   border: none;
   cursor: pointer;
   font-size: 18px;
+  transition: color 0.3s;
 }
 
 .navBarButton:hover {
-  text-decoration: underline;
+  color: #ededed;
 }

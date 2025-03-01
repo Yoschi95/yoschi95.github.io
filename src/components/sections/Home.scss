@@ -1,8 +1,12 @@
 .home {
   margin-bottom: 5rem;
+}
+
+.home-flexbox {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 8rem;
 }
 
 .home-img {
@@ -22,5 +26,11 @@
 }
 
 .home h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
+}
+
+.home-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
