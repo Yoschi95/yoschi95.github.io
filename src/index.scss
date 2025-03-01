@@ -43,3 +43,9 @@ a:visited {
 a:hover {
   color: #ededed;
 }
+
+button {
+  font-family: $primary-font, sans-serif;
+  font-weight: 400; /* regular */
+  font-style: normal;
+}
