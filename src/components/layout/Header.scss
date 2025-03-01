@@ -9,3 +9,18 @@
   width: 7vw;
   height: auto;
 }
+
+.header > button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header > button {
+  transition: transform 0.6s;
+}
+
+.header > button:hover {
+  transform: rotate(360deg);
+  //transform: rotateY(360deg);
+}
