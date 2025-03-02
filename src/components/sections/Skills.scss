@@ -25,6 +25,11 @@
   width: 60px;
   height: auto;
   padding-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.skill-container img:hover {
+  transform: scale(1.2);
 }
 
 .skill-container > p {
