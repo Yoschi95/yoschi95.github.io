@@ -1,3 +1,32 @@
 .skills {
   margin-bottom: 5rem;
 }
+
+.all-skills-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  row-gap: 20px;
+  align-items: center;
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+}
+
+.skill-container img {
+  width: 60px;
+  height: auto;
+  padding-bottom: 0.5rem;
+}
+
+.skill-container > p {
+  font-weight: 600;
+}
