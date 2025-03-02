@@ -1,6 +1,6 @@
-import jh_logo from "../../assets/images/logo/jh_logo.svg";
-import Nav from "./Nav";
 import "./Header.scss";
+import jh_logo from "../../assets/images/logo/jh_logo.svg";
+import Nav from "../sections/Nav";
 
 function Header() {
   // Define function to scroll to the section when clicking the logo
