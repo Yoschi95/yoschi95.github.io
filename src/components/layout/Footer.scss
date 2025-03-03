@@ -1,0 +1,31 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, auto);
+  align-items: center;
+  justify-items: center;
+}
+
+.footer > button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.footer > button {
+  transition: transform 0.6s;
+}
+
+.footer > button:hover {
+  transform: rotate(360deg);
+  //transform: rotateY(360deg);
+}
+
+.footer-logo {
+  width: 5vw;
+  height: auto;
+}
+
+.heart-symbol {
+  color: red;
+}
