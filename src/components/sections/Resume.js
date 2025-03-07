@@ -1,8 +1,13 @@
+import "./Resume.scss";
+import CV_en_website from "pdf:/src/assets/docs/CV_en_website.pdf";
+
 function Resume() {
   return (
-    <main className="resume" id="resume">
-      <h1>Resume</h1>
-    </main>
+    <div>
+      <a className="resumeButton" href={CV_en_website} download>
+        Resume
+      </a>
+    </div>
   );
 }
 

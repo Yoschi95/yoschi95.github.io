@@ -1,0 +1,11 @@
+.resumeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.resumeButton:hover {
+  color: #ededed;
+}

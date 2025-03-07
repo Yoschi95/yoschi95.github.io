@@ -1,5 +1,6 @@
 import "./Nav.scss";
 import NavBarButton from "../shared/NavBarButton";
+import Resume from "./Resume";
 
 function Nav() {
   return (
@@ -27,7 +28,7 @@ function Nav() {
           <NavBarButton text="Contact" sectionId="contact" />
         </li>
         <li>
-          <NavBarButton text="Resume" sectionId="resume" />
+          <Resume />
         </li>
       </ul>
     </nav>
