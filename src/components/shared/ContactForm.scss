@@ -1,0 +1,20 @@
+.contactForm input {
+  width: 30vw;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 16px;
+  background-color: #ededed;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contactForm textarea {
+  width: 30vw;
+  height: 150px;
+  resize: none;
+  border: 2px solid black;
+  border-radius: 16px;
+  background-color: #ededed;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
