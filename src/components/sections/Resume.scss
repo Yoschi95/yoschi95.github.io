@@ -4,8 +4,18 @@
   cursor: pointer;
   font-size: 18px;
   transition: color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .resumeButton:hover {
   color: #ededed;
+}
+
+.downloadIcon {
+  width: 20px;
+  height: 20px;
+  padding-top: 0.3rem;
+  padding-left: 0.3rem;
 }

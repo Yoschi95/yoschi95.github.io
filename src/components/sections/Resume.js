@@ -1,5 +1,6 @@
 import "./Resume.scss";
 import CV_en_website from "pdf:/src/assets/docs/CV_en_website.pdf";
+import download_icon from "../../assets/icons/download.png";
 
 function Resume() {
   const handleDownload = async () => {
@@ -24,11 +25,10 @@ function Resume() {
   };
 
   return (
-    <div>
-      <button className="resumeButton" onClick={handleDownload}>
-        Resume
-      </button>
-    </div>
+    <button className="resumeButton" onClick={handleDownload}>
+      Resume
+      <img className="downloadIcon" src={download_icon} />
+    </button>
   );
 }
 

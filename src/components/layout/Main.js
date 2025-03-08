@@ -5,7 +5,6 @@ import Projects from "../sections/Projects";
 import Skills from "../sections/Skills";
 import Education from "../sections/Education";
 import Contact from "../sections/Contact";
-import Resume from "../sections/Resume";
 import "./Main.scss";
 
 function Main() {
@@ -18,7 +17,6 @@ function Main() {
       <Skills />
       <Education />
       <Contact />
-      <Resume />
     </main>
   );
 }
