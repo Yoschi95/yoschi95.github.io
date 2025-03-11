@@ -1,5 +1,6 @@
 import "./ContactForm.scss";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import StandardButton from "./StandardButton";
 
 function ContactForm() {
@@ -8,6 +9,12 @@ function ContactForm() {
     email: "",
     message: "",
   });
+
+  const contactForm = useRef();
+
+  const PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY;
+  const SERVICE_ID = process.env.EMAILJS_SERVICE_ID;
+  const TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,7 +26,20 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+
+    emailjs
+      .sendForm(SERVICE_ID, TEMPLATE_ID, contactForm.current, {
+        publicKey: PUBLIC_KEY,
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!", formData);
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+
     setFormData({
       name: "",
       email: "",
@@ -28,7 +48,7 @@ function ContactForm() {
   };
 
   return (
-    <form className="contactForm" onSubmit={handleSubmit}>
+    <form ref={contactForm} className="contactForm" onSubmit={handleSubmit}>
       <label htmlFor="name">
         <input
           type="text"
