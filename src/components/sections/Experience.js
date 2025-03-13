@@ -1,5 +1,6 @@
 import "./Experience.scss";
 import StandardCard from "../shared/StandardCard";
+import companyLogo from "../../assets/images/experience/office.svg";
 
 function Experience() {
   return (
@@ -7,6 +8,7 @@ function Experience() {
       <h1>Experience</h1>
       <div className="cards-container">
         <StandardCard
+          image={companyLogo}
           company={"IAV GmbH"}
           job={"Software Engineer"}
           mainText={
@@ -20,6 +22,7 @@ function Experience() {
         />
 
         <StandardCard
+          image={companyLogo}
           company={"Siemens AG"}
           job={"Software Engineer"}
           mainText={
@@ -28,10 +31,11 @@ function Experience() {
               <li>Integration, maintenance and troubleshooting of field devices</li>
             </ul>
           }
-          caption={"From April 2021 to November 2022 | Berlin, Germany"}
+          caption={"From April 2021 to October 2022 | Berlin, Germany"}
         />
 
         <StandardCard
+          image={companyLogo}
           company={"Plümat GmbH"}
           job={"Software Engineer"}
           mainText={
@@ -40,20 +44,25 @@ function Experience() {
               <li>Integration, maintenance and troubleshooting of field devices</li>
             </ul>
           }
-          caption={"From June 2017 to September 2020 | Espelkamp, Germany"}
+          caption={"From February 2020 to September 2020 | Espelkamp, Germany"}
         />
 
         <StandardCard
+          image={companyLogo}
           company={"Plümat GmbH"}
-          job={"Electronics Technician"}
+          job={
+            <span>
+              Software Engineer <span className="card-small-text">(dual student)</span>
+            </span>
+          }
           mainText={
             <ul>
-              <li>Wiring of switch cabinets for machines and devices</li>
-              <li>Installation of sensors and actuators</li>
-              <li>Troubleshooting and commissioning</li>
+              <li>Development of PLC software for process automation in pharmacie sector</li>
+              <li>Integration, maintenance and troubleshooting of field devices</li>
+              <li>Several study related projects</li>
             </ul>
           }
-          caption={"From August 2014 to June 2017 | Espelkamp, Germany"}
+          caption={"From August 2016 to January 2020 | Espelkamp, Germany"}
         />
       </div>
     </main>
