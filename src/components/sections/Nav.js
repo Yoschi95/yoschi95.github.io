@@ -16,13 +16,13 @@ function Nav() {
           <NavBarButton text="Experience" sectionId="experience" />
         </li>
         <li>
-          <NavBarButton text="Projects" sectionId="projects" />
-        </li>
-        <li>
           <NavBarButton text="Skills" sectionId="skills" />
         </li>
         <li>
           <NavBarButton text="Education" sectionId="education" />
+        </li>
+        <li>
+          <NavBarButton text="Projects" sectionId="projects" />
         </li>
         <li>
           <NavBarButton text="Contact" sectionId="contact" />

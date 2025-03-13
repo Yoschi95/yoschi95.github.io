@@ -13,9 +13,9 @@ function Main() {
       <Home />
       <About />
       <Experience />
-      <Projects />
       <Skills />
       <Education />
+      <Projects />
       <Contact />
     </main>
   );
