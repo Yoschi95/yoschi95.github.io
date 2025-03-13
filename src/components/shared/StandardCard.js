@@ -1,11 +1,10 @@
 import "./StandardCard.scss";
-import companyLogo from "../../assets/images/experience/office.svg";
 
-function StandardCard({ company, job, mainText, caption }) {
+function StandardCard({ image, company, job, mainText, caption }) {
   return (
     <div className="standard-card">
       <div className="standard-card-head">
-        <img src={companyLogo} alt="company logo" />
+        <img src={image} alt="logo" />
         <p>{company}</p>
         <p>{job}</p>
       </div>
