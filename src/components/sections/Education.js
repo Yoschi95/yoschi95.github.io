@@ -13,9 +13,12 @@ function Education() {
           job={"Electrical Engineering (M.Eng.)"}
           mainText={
             <ul>
-              <li>Development of series software in automotive sector</li>
-              <li>Test management</li>
-              <li>Software -architecture, -implementation and -testing</li>
+              <li>Artificial Intelligence</li>
+              <li>Functional Safety</li>
+              <li>Process Automation</li>
+              <li>Control Engineering</li>
+              <li>Renewable energies</li>
+              <li>Industry 4.0</li>
             </ul>
           }
           caption={"From October 2020 to December 2022 | Berlin, Germany"}
@@ -27,8 +30,12 @@ function Education() {
           job={"Electrical Engineering (B.Eng.)"}
           mainText={
             <ul>
-              <li>Development of PLC software for building automation</li>
-              <li>Integration, maintenance and troubleshooting of field devices</li>
+              <li>Computer Science</li>
+              <li>Software development</li>
+              <li>Embedded Systems</li>
+              <li>Control engineering</li>
+              <li>Circuit design</li>
+              <li>Printed circuit board design</li>
             </ul>
           }
           caption={"From August 2016 to January 2020 | Bielefeld, Germany"}
