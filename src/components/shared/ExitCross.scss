@@ -1,0 +1,15 @@
+.cross-line {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: black;
+  transform-origin: center;
+}
+
+.cross-line-1 {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.cross-line-2 {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
