@@ -9,11 +9,7 @@ function Projects() {
         <ProjectCard
           title={"Portfolio Website"}
           description={
-            <ul>
-              <li>Development of series software in automotive sector</li>
-              <li>Test management</li>
-              <li>Software -architecture, -implementation and -testing</li>
-            </ul>
+            "My portfolio website showcases my experience, skills and education in a clean and engaging design. It is fully repsonsive, fast and user-friendly."
           }
           techStack={
             <ul>
@@ -24,13 +20,9 @@ function Projects() {
           }
         />
         <ProjectCard
-          title={"Litte Lemon"}
+          title={"Little Lemon"}
           description={
-            <ul>
-              <li>Development of series software in automotive sector</li>
-              <li>Test management</li>
-              <li>Software -architecture, -implementation and -testing</li>
-            </ul>
+            "A modern restaurant website that features a menu, opening hours, and an online reservation system. Customers can easily book tables online and reice confirmations"
           }
           techStack={
             <ul>
@@ -43,11 +35,7 @@ function Projects() {
         <ProjectCard
           title={"PMM"}
           description={
-            <ul>
-              <li>Development of series software in automotive sector</li>
-              <li>Test management</li>
-              <li>Software -architecture, -implementation and -testing</li>
-            </ul>
+            "An ECU middleware designed to manage notifications within a vehicle's parking context. It allows for message prioritization, configurable display durations, and selection of the display where the message will appear"
           }
           techStack={
             <ul>
@@ -60,11 +48,7 @@ function Projects() {
         <ProjectCard
           title={"PisstsHeut"}
           description={
-            <ul>
-              <li>Development of series software in automotive sector</li>
-              <li>Test management</li>
-              <li>Software -architecture, -implementation and -testing</li>
-            </ul>
+            "A minimalist weather app that provides current weather data and forecasts for any location. It features a clean interface and uses a weather API for reliable data"
           }
           techStack={
             <ul>
