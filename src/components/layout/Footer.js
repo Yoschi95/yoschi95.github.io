@@ -13,13 +13,15 @@ function Footer() {
 
   return (
     <footer className="footer">
-      <button onClick={scrollToHomeSection}>
+      <button onClick={scrollToHomeSection} className="img-button">
         <img src={jh_logo} alt="Joscha Hartmann brand logo" className="footer-logo" />
       </button>
       <p>
         Developed and designed with <span className="heart-symbol">&#10084;</span> by Joscha Hartmann
       </p>
-      <ArrowUp />
+      <button onClick={scrollToHomeSection} className="arrow-button">
+        <ArrowUp />
+      </button>
     </footer>
   );
 }

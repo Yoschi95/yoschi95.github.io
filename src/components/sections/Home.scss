@@ -34,3 +34,19 @@
   align-items: center;
   justify-content: center;
 }
+
+.home .arrow-button {
+  background: none;
+  cursor: pointer;
+  animation: scaleButton 2s infinite;
+}
+
+@keyframes scaleButton {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}

@@ -27,7 +27,9 @@ function Home() {
         <img src={profile_img} alt="Profile image Joscha Hartmann" className="home-img" />
       </div>
       <div className="home-arrow">
-        <ArrowDown />
+        <button onClick={scrollToAboutSection} className="arrow-button">
+          <ArrowDown />
+        </button>
       </div>
     </main>
   );
