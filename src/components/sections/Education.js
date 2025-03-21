@@ -22,6 +22,7 @@ function Education() {
             </ul>
           }
           caption={"From October 2020 to December 2022 | Berlin, Germany"}
+          link={"https://et-master.htw-berlin.de/"}
         />
 
         <StandardCard
@@ -39,6 +40,7 @@ function Education() {
             </ul>
           }
           caption={"From August 2016 to January 2020 | Bielefeld, Germany"}
+          link={"https://www.hsbi.de/studiengaenge/elektrotechnik-bachelor-praxisintegriert"}
         />
 
         <StandardCard
@@ -53,6 +55,9 @@ function Education() {
             </ul>
           }
           caption={"From August 2014 to June 2017 | Espelkamp, Germany"}
+          link={
+            "https://www.lsbk.de/bildungsangebot/berufsschule-duale-ausbildung/elektrotechnik/elektroniker_in-fuer-betriebstechnik"
+          }
         />
       </div>
     </main>

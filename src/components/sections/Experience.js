@@ -19,6 +19,7 @@ function Experience() {
             </ul>
           }
           caption={"From December 2022 to now | Berlin, Germany"}
+          link={"https://www.iav.com/"}
         />
 
         <StandardCard
@@ -32,6 +33,7 @@ function Experience() {
             </ul>
           }
           caption={"From April 2021 to October 2022 | Berlin, Germany"}
+          link={"https://www.siemens.com/"}
         />
 
         <StandardCard
@@ -45,6 +47,7 @@ function Experience() {
             </ul>
           }
           caption={"From February 2020 to September 2020 | Espelkamp, Germany"}
+          link={"https://www.pluemat.info/"}
         />
 
         <StandardCard
@@ -63,6 +66,7 @@ function Experience() {
             </ul>
           }
           caption={"From August 2016 to January 2020 | Espelkamp, Germany"}
+          link={"https://www.pluemat.info/"}
         />
       </div>
     </main>
