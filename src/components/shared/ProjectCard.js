@@ -3,8 +3,10 @@ import React, { useState } from "react";
 import projectLogo from "../../assets/images/projects/Projects_1.svg";
 import DotMenu from "../shared/DotMenu";
 import ExitCross from "../shared/ExitCross";
+import webLogo from "../../assets/images/projects/web.svg";
+import gitHubLogo from "../../assets/images/contact/github.svg";
 
-function ProjectCard({ title, description, techStack }) {
+function ProjectCard({ title, description, techStack, gitHubLink, appLink }) {
   const [isDefaultMenu, setIsDefaultMenu] = useState(true);
 
   const toggleMenu = () => {
@@ -16,17 +18,40 @@ function ProjectCard({ title, description, techStack }) {
       <div className="head">
         <img src={projectLogo} alt="logo" />
       </div>
+
       <div className="body">
-        <div className="title">
-          <p>{title}</p>
-          <button className="menuButton" onClick={toggleMenu}>
-            {isDefaultMenu ? <DotMenu /> : <ExitCross />}
-          </button>
-        </div>
         {isDefaultMenu ? (
-          <p className={`description fade-in ${isDefaultMenu ? "animate" : ""}`}>{description}</p>
+          <div>
+            <div className="default-title-bar">
+              <p className="heading">{title}</p>
+              <button className="button" onClick={toggleMenu}>
+                <DotMenu />
+              </button>
+            </div>
+            <p className="description">{description}</p>
+          </div>
         ) : (
-          <p className={`description fade-in}`}>{techStack}</p>
+          <div className="popup">
+            <div className="exit-title-bar">
+              <p className="description">
+                <span className="heading">Tech Stack</span>
+                <br></br>
+                {techStack}
+              </p>
+              <button className="button" onClick={toggleMenu}>
+                <ExitCross />
+              </button>
+            </div>
+
+            <div className="exit-logo-bar">
+              <a href={gitHubLink} target="_blank" rel="noopener noreferrer">
+                <img src={gitHubLogo} />
+              </a>
+              <a href={appLink} target="_blank" rel="noopener noreferrer">
+                <img src={webLogo} />
+              </a>
+            </div>
+          </div>
         )}
       </div>
     </div>
