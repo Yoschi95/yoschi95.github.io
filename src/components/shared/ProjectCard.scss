@@ -70,11 +70,16 @@
   font-size: 14px;
 }
 
+.project-card .default-menu {
+  animation: fadeIn-default-menu 1s ease-in-out;
+}
+
 .project-card .popup {
   margin-left: 1rem;
   margin-right: 1rem;
   background-color: #ededed;
   border-radius: 16px;
+  animation: fadeIn-popup 1s ease-in-out;
 }
 
 .project-card .exit-title-bar {
@@ -98,4 +103,24 @@
   width: 30px;
   height: 30px;
   padding-left: 0.5rem;
+}
+
+@keyframes fadeIn-default-menu {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn-popup {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

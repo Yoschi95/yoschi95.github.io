@@ -21,7 +21,7 @@ function ProjectCard({ title, description, techStack, gitHubLink, appLink }) {
 
       <div className="body">
         {isDefaultMenu ? (
-          <div>
+          <div className="default-menu">
             <div className="default-title-bar">
               <p className="heading">{title}</p>
               <button className="button" onClick={toggleMenu}>
