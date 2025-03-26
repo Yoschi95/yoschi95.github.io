@@ -1,5 +1,6 @@
 import "./ContactForm.scss";
 import { useState, useRef } from "react";
+import { ToastContainer, toast, Slide } from "react-toastify";
 import emailjs from "@emailjs/browser";
 import StandardButton from "./StandardButton";
 
@@ -33,10 +34,10 @@ function ContactForm() {
       })
       .then(
         () => {
-          console.log("SUCCESS!", formData);
+          console.log("Form submitted successfully!", formData);
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          console.log("Failed to submit form...", error.text);
         }
       );
 
@@ -45,48 +46,64 @@ function ContactForm() {
       email: "",
       message: "",
     });
+
+    toast.success("Message sent!👌", {
+      className: "costum-toast",
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: false,
+      draggable: false,
+      progress: undefined,
+      theme: "light",
+      transition: Slide,
+    });
   };
 
   return (
-    <form ref={contactForm} className="contactForm" onSubmit={handleSubmit}>
-      <label htmlFor="name">
-        <input
-          type="text"
-          id="name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          placeholder="name*"
-          maxLength={200}
-          required
-        />
-      </label>
-      <label htmlFor="email">
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          placeholder="email*"
-          maxLength={200}
-          required
-        />
-      </label>
-      <label htmlFor="message">
-        <textarea
-          id="message"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          placeholder="message*"
-          minLength={10}
-          maxLength={2000}
-          required
-        />
-      </label>
-      <StandardButton type="submit" text="SEND MESSAGE" />
-    </form>
+    <div>
+      <form ref={contactForm} className="contactForm" onSubmit={handleSubmit}>
+        <label htmlFor="name">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            placeholder="name*"
+            maxLength={200}
+            required
+          />
+        </label>
+        <label htmlFor="email">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="email*"
+            maxLength={200}
+            required
+          />
+        </label>
+        <label htmlFor="message">
+          <textarea
+            id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            placeholder="message*"
+            minLength={10}
+            maxLength={2000}
+            required
+          />
+        </label>
+        <StandardButton type="submit" text="SEND MESSAGE" />
+      </form>
+      <ToastContainer />
+    </div>
   );
 }
 
