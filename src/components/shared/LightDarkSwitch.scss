@@ -1,0 +1,118 @@
+$scale: 0.3;
+
+.isDarkMode {
+  height: #{100px * $scale};
+  width: #{200px * $scale};
+  border-radius: #{50px * $scale};
+  margin: auto;
+  background-image: linear-gradient(aqua, skyblue);
+  position: relative;
+  cursor: pointer;
+
+  &.night {
+    background-image: linear-gradient(midnightblue, rebeccapurple);
+  }
+}
+
+.notch {
+  height: #{90px * $scale};
+  width: #{90px * $scale};
+  border-radius: 50%;
+  background: yellow;
+  position: absolute;
+  top: #{5px * $scale};
+  left: #{5px * $scale};
+  box-shadow: 0 0 #{5px * $scale} yellow;
+  z-index: 1;
+  transition: all 0.3s ease;
+
+  & > .crater {
+    background: burlywood;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0;
+    box-shadow: 0 #{5px * $scale} #{5px * $scale} rgba(0, 0, 0, 0.4) inset;
+  }
+}
+
+.night .crater {
+  opacity: 0.4;
+}
+
+.crater:first-child {
+  left: #{5px * $scale};
+  top: #{15px * $scale};
+  height: #{15px * $scale};
+  width: #{40px * $scale};
+  transform: rotate(-45deg);
+}
+
+.crater:last-child {
+  right: #{10px * $scale};
+  top: #{15px * $scale};
+  height: #{15px * $scale};
+  width: #{25px * $scale};
+  transform: rotate(45deg);
+}
+
+.night > .notch {
+  background: whitesmoke;
+  box-shadow: 0 0 #{5px * $scale} whitesmoke;
+  transform: translate(#{100px * $scale}, 0);
+}
+
+.shape {
+  position: absolute;
+  background: whitesmoke;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+
+  &.sm {
+    height: #{5px * $scale};
+    width: #{50px * $scale};
+    top: 50%;
+    left: 60%;
+  }
+
+  &.md {
+    height: #{10px * $scale};
+    width: #{75px * $scale};
+    top: 25%;
+    left: 25%;
+    z-index: 2;
+  }
+
+  &.lg {
+    height: #{15px * $scale};
+    width: #{100px * $scale};
+    bottom: #{20px * $scale};
+    left: 25%;
+  }
+}
+
+.night .shape {
+  background: lightgray;
+  box-shadow: 0 0 #{10px * $scale} #{2px * $scale} violet;
+
+  &.sm {
+    height: #{5px * $scale};
+    width: #{5px * $scale};
+    transform: translate(#{-40px * $scale}, 0);
+
+    &:first-of-type {
+      transform: translate(#{-80px * $scale}, #{-10px * $scale});
+    }
+  }
+
+  &.md {
+    height: #{10px * $scale};
+    width: #{10px * $scale};
+    transform: translate(#{10px * $scale}, 0);
+  }
+
+  &.lg {
+    height: #{15px * $scale};
+    width: #{15px * $scale};
+    transform: translate(#{-10px * $scale}, 0);
+  }
+}
