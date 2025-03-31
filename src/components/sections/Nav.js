@@ -1,8 +1,12 @@
 import "./Nav.scss";
 import NavBarButton from "../shared/NavBarButton";
 import Resume from "./Resume";
+import LightDarkSwitch from "../shared/LightDarkSwitch";
+import { useState } from "react";
 
 function Nav() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
   return (
     <nav className="navbar">
       <ul>
@@ -29,6 +33,9 @@ function Nav() {
         </li>
         <li>
           <Resume />
+        </li>
+        <li>
+          <LightDarkSwitch isDarkMode={isDarkMode} onClick={() => setIsDarkMode(!isDarkMode)} />
         </li>
       </ul>
     </nav>
