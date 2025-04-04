@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: space-between;
   width: 25vw;
-  background-color: var(--secondary-color);
+  background-color: var(--project-card-bg-color);
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2);
@@ -82,6 +82,7 @@
   background-color: #ededed;
   border-radius: 16px;
   animation: fadeIn-popup 1s ease-in-out;
+  color: var(--card-text-color);
 }
 
 .project-card .exit-title-bar {

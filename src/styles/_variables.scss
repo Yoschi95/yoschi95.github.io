@@ -1,15 +1,33 @@
 :root {
   --primary-color: #d6c8be;
   --secondary-color: #ededed;
-  --bg-color-start: var(--primary-color);
-  --bg-color-end: var(--secondary-color);
+  --bg-color-start: #d6c8be;
+  --bg-color-end: #ededed;
   --text-color: black;
   --border-color: black;
+  --form-border-color: black;
   --button-color: black;
   --button-color-hover: #615b56;
+  --button-text-color: #ededed;
+  --card-text-color: black;
+  --project-card-bg-color: #ededed;
+  --exit-cross-border-color: black;
 }
 
 [data-theme="dark"] {
+  --primary-color: #383532;
+  --secondary-color: #787878;
+  --bg-color-start: #383532;
+  --bg-color-end: #787878;
+  --text-color: #ededed;
+  --border-color: #ededed;
+  --form-border-color: #383532;
+  --button-color: #ededed;
+  --button-color-hover: #878787;
+  --button-text-color: #383532;
+  --card-text-color: #383532;
+  --project-card-bg-color: #ededed;
+  --exit-cross-border-color: #383532;
 }
 
 $primary-font: "Inter";

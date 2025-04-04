@@ -1,10 +1,13 @@
 import "./ContactForm.scss";
-import { useState, useRef } from "react";
+import { useState, useRef, useContext } from "react";
 import { ToastContainer, toast, Slide } from "react-toastify";
 import emailjs from "@emailjs/browser";
 import StandardButton from "./StandardButton";
+import { ThemeContext } from "../context/ThemeContext";
 
 function ContactForm() {
+  const { theme } = useContext(ThemeContext);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -56,7 +59,7 @@ function ContactForm() {
       pauseOnHover: false,
       draggable: false,
       progress: undefined,
-      theme: "light",
+      theme: theme,
       transition: Slide,
     });
   };
