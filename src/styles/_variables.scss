@@ -1,0 +1,15 @@
+:root {
+  --primary-color: #d6c8be;
+  --secondary-color: #ededed;
+  --bg-color-start: var(--primary-color);
+  --bg-color-end: var(--secondary-color);
+  --text-color: black;
+  --border-color: black;
+  --button-color: black;
+  --button-color-hover: #615b56;
+}
+
+[data-theme="dark"] {
+}
+
+$primary-font: "Inter";
