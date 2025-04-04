@@ -1,3 +1,5 @@
+@use "/src/styles/variables" as *;
+
 .header {
   display: flex;
   align-items: center; // Vertical allignment of items in flexbox

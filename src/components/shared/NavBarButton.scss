@@ -1,3 +1,5 @@
+@use "/src/styles/variables" as *;
+
 .navBarButton {
   background: none;
   border: none;
@@ -7,5 +9,5 @@
 }
 
 .navBarButton:hover {
-  color: #ededed;
+  color: var(--secondary-color);
 }

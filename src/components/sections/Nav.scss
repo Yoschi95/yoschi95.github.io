@@ -1,3 +1,5 @@
+@use "/src/styles/variables" as *;
+
 .navbar > ul {
   list-style: none;
   display: flex;

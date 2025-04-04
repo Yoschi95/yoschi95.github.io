@@ -1,8 +1,10 @@
+@use "/src/styles/variables" as *;
+
 .cross-line {
   position: absolute;
   width: 24px;
   height: 2px;
-  background-color: black;
+  background-color: var(--border-color);
   transform-origin: center;
 }
 

@@ -1,16 +1,18 @@
+@use "/src/styles/variables" as *;
+
 .circle-arrow-down {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background-color: transparent;
-  border: 3px solid black;
+  border: 3px solid var(--border-color);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .arrow-down {
-  border: solid black;
+  border: solid var(--border-color);
   border-radius: 10%;
   border-width: 0 3px 3px 0;
   display: inline-block;

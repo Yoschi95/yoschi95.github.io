@@ -1,3 +1,5 @@
+@use "/src/styles/variables" as *;
+
 .resumeButton {
   background: none;
   border: none;
@@ -10,7 +12,7 @@
 }
 
 .resumeButton:hover {
-  color: #ededed;
+  color: var(--secondary-color);
 }
 
 .downloadIcon {
