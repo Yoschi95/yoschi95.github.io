@@ -14,7 +14,7 @@ function StandardCard({ image, company, job, mainText, caption, link }) {
       </div>
       <hr />
       <div className="standard-card-body">
-        <p>{mainText}</p>
+        <div>{mainText}</div>
         <p className="standard-card-body-caption">{caption}</p>
       </div>
     </div>
