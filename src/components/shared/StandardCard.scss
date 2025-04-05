@@ -1,21 +1,32 @@
 @use "/src/styles/variables" as *;
 
 .standard-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   width: 25vw;
-  height: 25vh;
+  //height: 25vh;
   background-color: #ededed;
   border-radius: 16px;
   box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
+  overflow: hidden;
   color: var(--card-text-color);
+}
+
+.standard-card:hover {
+  transform: scale(1.05);
 }
 
 .standard-card-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  width: 100%;
   font-weight: 800;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .standard-card-head a {
@@ -32,13 +43,16 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  width: 100%;
   padding: 1rem;
-  height: 13vh;
+  //height: 13vh;
   font-size: 14px;
 }
 
 .standard-card-body ul {
-  padding: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 3rem;
 }
 
 .standard-card-body li {
@@ -46,10 +60,8 @@
   margin-left: 1rem;
 }
 
-.standard-card:hover {
-  transform: scale(1.05);
-}
-
 .standard-card-body-caption {
   font-size: 12px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

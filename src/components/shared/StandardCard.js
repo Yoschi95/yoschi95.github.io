@@ -4,9 +4,11 @@ function StandardCard({ image, company, job, mainText, caption, link }) {
   return (
     <div className="standard-card">
       <div className="standard-card-head">
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          <img src={image} alt="logo" />
-        </a>
+        <p>
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <img src={image} alt="logo" />
+          </a>
+        </p>
         <p>{company}</p>
         <p>{job}</p>
       </div>
