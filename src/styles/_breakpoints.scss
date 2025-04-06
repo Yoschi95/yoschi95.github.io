@@ -1,0 +1,18 @@
+$breakpoints: (
+  "mobile": 480px,
+  "tablet": 768px,
+  "laptop": 1024px,
+  "desktop": 1440px,
+);
+
+@mixin respond-to($device) {
+  $breakpoint: map-get($breakpoints, $device);
+
+  @if $breakpoint {
+    @media (max-width: $breakpoint) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint '#{$device}' not found in map.";
+  }
+}
