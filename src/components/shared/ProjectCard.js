@@ -1,6 +1,6 @@
 import "./ProjectCard.scss";
 import React, { useState } from "react";
-import projectLogo from "../../assets/images/projects/Projects_1.svg";
+import projectLogo from "../../assets/images/projects/projects_1.svg";
 import DotMenu from "../shared/DotMenu";
 import ExitCross from "../shared/ExitCross";
 import webLogo from "../../assets/images/projects/web.svg";
