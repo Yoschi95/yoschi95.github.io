@@ -9,7 +9,7 @@
       "type": "image/x-icon"
     },
     {
-      "src": "./src/assets/images/logo/jh_logo_144x144.png",
+      "src": "./images/logo/jh_logo_144x144.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "any"
@@ -17,7 +17,7 @@
   ],
   "screenshots": [
     {
-      "src": "./src/assets/images/logo/jh_logo.png",
+      "src": "./images/logo/jh_logo.png",
       "sizes": "781x781",
       "type": "image/png",
       "platform": "desktop",
