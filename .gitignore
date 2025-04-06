@@ -8,3 +8,5 @@
 !index.html
 !src/
 !src/**
+!.github/
+!.github/**

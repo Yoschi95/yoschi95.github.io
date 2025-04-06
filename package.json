@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/Yoschi95/yoschi95.github.io/issues"
   },
-  "homepage": "https://github.com/Yoschi95/yoschi95.github.io#readme",
+  "homepage": "https://yoschi95.github.io",
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.13.3",
     "@parcel/transformer-sass": "^2.13.3",
