@@ -4,7 +4,7 @@
   "description": "Portfolio website of Joscha Hartmann",
   "icons": [
     {
-      "src": "./src/assets/icons/favicon.ico",
+      "src": "./icons/favicon.ico",
       "sizes": "32x32",
       "type": "image/x-icon"
     },
