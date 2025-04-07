@@ -7,7 +7,7 @@ function NavBarButton({ text, sectionId }) {
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: "smooth" });
     } else {
-      console.log("Cannot find targetElement");
+      console.log(`Cannot find targetElement: ${sectionId}`);
     }
   };
 
