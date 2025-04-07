@@ -1,5 +1,6 @@
 *
 !.gitignore
+!LICENSE
 !.prettierignore
 !.parcelrc
 !README.md
