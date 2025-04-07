@@ -6,6 +6,8 @@ Welcome to my personal website, built to showcase my skills, projects and experi
 
 [**View Portfolio**](https://yoschi95.github.io/)
 
+![Portfolio Demo](src/assets/gifs/portfolio_demo.gif)
+
 ## Tech Stack
 
 - **Frontend:** HTML5, CSS3, Sass, JavaScript, React.js
