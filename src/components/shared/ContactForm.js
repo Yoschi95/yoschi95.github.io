@@ -38,9 +38,35 @@ function ContactForm() {
       .then(
         () => {
           console.log("Form submitted successfully!", formData);
+
+          toast.success("Message sent!👌", {
+            className: "costum-toast",
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: false,
+            draggable: false,
+            progress: undefined,
+            theme: theme,
+            transition: Slide,
+          });
         },
         (error) => {
-          console.log("Failed to submit form...", error.text);
+          console.log("Failed to submit form...", error);
+
+          toast.error("Failed to send message!", {
+            className: "costum-toast",
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: false,
+            draggable: false,
+            progress: undefined,
+            theme: theme,
+            transition: Slide,
+          });
         }
       );
 
@@ -48,19 +74,6 @@ function ContactForm() {
       name: "",
       email: "",
       message: "",
-    });
-
-    toast.success("Message sent!👌", {
-      className: "costum-toast",
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: false,
-      pauseOnHover: false,
-      draggable: false,
-      progress: undefined,
-      theme: theme,
-      transition: Slide,
     });
   };
 
