@@ -6,8 +6,8 @@ import ArrowDown from "../shared/ArrowDown.js";
 function Home() {
   // Define function to scroll to the section when clicking the read more button
   const scrollToAboutSection = () => {
-    //window.history.pushState(null, "", "about");
-    targetElement = document.getElementById("about");
+    window.history.pushState(null, "", "about");
+    const targetElement = document.getElementById("about");
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: "smooth" });
     }
