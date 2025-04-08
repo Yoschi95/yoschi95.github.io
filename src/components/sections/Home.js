@@ -16,7 +16,7 @@ function Home() {
   return (
     <main className="home" id="home">
       <div className="home-flexbox">
-        <div className="home-text">
+        <div className="home-text flex-item-1">
           <h1>Hello! I'm Joscha.&#128075;</h1>
           <h2>
             a passionate software engineer from Germany. I like to develop innovative solutions that solve complex
@@ -24,7 +24,7 @@ function Home() {
           </h2>
           <StandardButton text="Read more" handleClick={scrollToAboutSection} />
         </div>
-        <img src={profile_img} alt="Profile image Joscha Hartmann" className="home-img" />
+        <img src={profile_img} alt="Profile image Joscha Hartmann" className="home-img flex-item-2" />
       </div>
       <div className="home-arrow">
         <button onClick={scrollToAboutSection} className="arrow-button">

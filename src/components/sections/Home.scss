@@ -1,4 +1,5 @@
 @use "/src/styles/variables" as *;
+@use "/src/styles/breakpoints" as *;
 
 .home {
   margin-bottom: 5rem;
@@ -9,6 +10,27 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 8rem;
+
+  @include respond-to("mobile") {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.home-flexbox .flex-item-1 {
+  order: 1;
+
+  @include respond-to("mobile") {
+    order: 2;
+  }
+}
+
+.home-flexbox .flex-item-2 {
+  order: 2;
+
+  @include respond-to("mobile") {
+    order: 1;
+  }
 }
 
 .home-img {

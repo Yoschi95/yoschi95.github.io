@@ -6,7 +6,7 @@ function About() {
     <main className="about" id="about">
       <h1>About me</h1>
       <div className="about-flexbox">
-        <div className="about-text">
+        <div className="about-text flex-item-1">
           <p>
             Hi there! I am currently working as a software engineer in the automotive industry, where I help develop
             cutting-edge technology that powers modern vehicles. My work involves designing, implementing, and
@@ -39,7 +39,7 @@ function About() {
             in between. Feel free to connect with me — I’d love to hear from you!
           </p>
         </div>
-        <img src={me_comic} alt="AI generated comic image of Joscha Hartmann" className="about-img" />
+        <img src={me_comic} alt="AI generated comic image of Joscha Hartmann" className="about-img flex-item-2" />
       </div>
     </main>
   );
