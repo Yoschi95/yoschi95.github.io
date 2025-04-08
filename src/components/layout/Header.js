@@ -5,7 +5,7 @@ import Nav from "../sections/Nav";
 function Header() {
   // Define function to scroll to the section when clicking the logo
   const scrollToHomeSection = () => {
-    window.history.pushState(null, "", "home");
+    window.history.pushState(null, "", "#home");
     const targetElement = document.getElementById("home");
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: "smooth" });
