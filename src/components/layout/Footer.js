@@ -5,7 +5,7 @@ import ArrowUp from "../shared/ArrowUp.js";
 function Footer() {
   const scrollToHomeSection = () => {
     window.history.pushState(null, "", "home");
-    targetElement = document.getElementById("home");
+    const targetElement = document.getElementById("home");
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: "smooth" });
     }
