@@ -90,7 +90,7 @@ function ContactForm() {
             placeholder="name*"
             maxLength={200}
             required
-            autocomplete="on"
+            autoComplete="on"
           />
         </label>
         <label htmlFor="email">
@@ -103,7 +103,7 @@ function ContactForm() {
             placeholder="email*"
             maxLength={200}
             required
-            autocomplete="on"
+            autoComplete="on"
           />
         </label>
         <label htmlFor="message">
