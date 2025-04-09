@@ -5,6 +5,12 @@
   margin-bottom: 5rem;
 }
 
+.contact h1 {
+  @include respond-to("mobile") {
+    text-align: center;
+  }
+}
+
 .contactFlexbox {
   display: flex;
   align-items: baseline;
@@ -14,6 +20,8 @@
   @include respond-to("mobile") {
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    text-align: center;
   }
 }
 

@@ -5,6 +5,12 @@
   margin-bottom: 5rem;
 }
 
+.about h1 {
+  @include respond-to("mobile") {
+    text-align: center;
+  }
+}
+
 .about-flexbox {
   display: flex;
   align-items: flex-start;
@@ -42,10 +48,16 @@
   @include respond-to("mobile") {
     width: 200px;
     height: 200px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 }
 
 .about-text {
   text-align: justify;
   margin-right: 15vw;
+
+  @include respond-to("mobile") {
+    margin-right: 0;
+  }
 }

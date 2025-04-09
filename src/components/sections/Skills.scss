@@ -5,6 +5,12 @@
   margin-bottom: 5rem;
 }
 
+.skills h1 {
+  @include respond-to("mobile") {
+    text-align: center;
+  }
+}
+
 .all-skills-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

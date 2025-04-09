@@ -5,6 +5,12 @@
   margin-bottom: 5rem;
 }
 
+.projects h1 {
+  @include respond-to("mobile") {
+    text-align: center;
+  }
+}
+
 .projects .cards-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

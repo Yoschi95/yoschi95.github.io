@@ -44,12 +44,18 @@
   @include respond-to("mobile") {
     width: 200px;
     height: 200px;
+    margin-bottom: 4rem;
   }
 }
 
 .home-text {
   text-align: left;
   margin-right: 15vw;
+
+  @include respond-to("mobile") {
+    text-align: center;
+    margin-right: 0;
+  }
 }
 
 .home h1 {
