@@ -34,10 +34,15 @@
 }
 
 .about-img {
-  width: 500;
-  height: 500;
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
   object-fit: cover;
+
+  @include respond-to("mobile") {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .about-text {
