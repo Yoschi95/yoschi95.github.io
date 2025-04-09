@@ -36,7 +36,10 @@
 
 .standard-card-head p {
   @include respond-to("mobile") {
-    padding-left: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 14px;
+    font-weight: 800;
   }
 }
 
