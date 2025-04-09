@@ -1,4 +1,14 @@
 @use "/src/styles/variables" as *;
+@use "/src/styles/breakpoints" as *;
+
+.contactForm {
+  @include respond-to("mobile") {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .contactForm input {
   width: 30vw;
@@ -8,6 +18,11 @@
   background-color: #ededed;
   padding-left: 1rem;
   margin-bottom: 2rem;
+
+  @include respond-to("mobile") {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }
 
 .contactForm textarea {
@@ -19,6 +34,12 @@
   background-color: #ededed;
   padding: 1rem;
   margin-bottom: 2rem;
+
+  @include respond-to("mobile") {
+    width: calc(100% - 0.5rem);
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .costum-toast {
