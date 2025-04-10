@@ -1,4 +1,5 @@
 @use "/src/styles/variables" as *;
+@use "/src/styles/breakpoints" as *;
 
 .footer {
   display: grid;
@@ -6,6 +7,13 @@
   grid-template-rows: repeat(1, auto);
   align-items: center;
   justify-items: center;
+
+  @include respond-to("mobile") {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+    text-align: center;
+    gap: 1rem;
+  }
 }
 
 .footer > button {
@@ -34,8 +42,18 @@
 .footer-logo {
   width: 5vw;
   height: auto;
+
+  @include respond-to("mobile") {
+    width: 25vw;
+  }
 }
 
 .heart-symbol {
   color: red;
+}
+
+.footer > p {
+  @include respond-to("mobile") {
+    font-size: 14px;
+  }
 }
