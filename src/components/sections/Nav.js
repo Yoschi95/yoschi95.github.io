@@ -5,11 +5,11 @@ import LightDarkSwitch from "../shared/LightDarkSwitch";
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 
-function Nav() {
+function Nav({ className }) {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${className}`}>
       <ul>
         <li>
           <NavBarButton text="Home" sectionId="home" />
@@ -34,9 +34,6 @@ function Nav() {
         </li>
         <li>
           <Resume />
-        </li>
-        <li>
-          <LightDarkSwitch theme={theme} onClick={toggleTheme} />
         </li>
       </ul>
     </nav>

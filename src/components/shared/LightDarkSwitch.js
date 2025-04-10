@@ -1,8 +1,8 @@
 import "./LightDarkSwitch.scss";
 
-function LightDarkSwitch({ theme, onClick }) {
+function LightDarkSwitch({ theme, onClick, className }) {
   return (
-    <button onClick={onClick} className={`switch-frame${theme === "dark" ? " night" : ""}`}>
+    <button onClick={onClick} className={`switch-frame${theme === "dark" ? " night" : ""} ${className}`}>
       <div className="notch">
         <div className="crater" />
         <div className="crater" />
