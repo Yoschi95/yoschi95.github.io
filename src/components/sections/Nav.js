@@ -1,13 +1,8 @@
 import "./Nav.scss";
 import NavBarButton from "../shared/NavBarButton";
 import Resume from "./Resume";
-import LightDarkSwitch from "../shared/LightDarkSwitch";
-import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
 
 function Nav({ className }) {
-  const { theme, toggleTheme } = useContext(ThemeContext);
-
   return (
     <nav className={`navbar ${className}`}>
       <ul>
