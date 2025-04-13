@@ -1,0 +1,12 @@
+.burger-icon {
+  display: flex;
+  flex-direction: column;
+}
+
+.burger-bar {
+  border: 2px solid black;
+  background-color: black;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  width: 30px;
+}
