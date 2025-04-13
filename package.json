@@ -1,7 +1,7 @@
 {
-  "name": "Yoschi95",
+  "name": "portfolio-website",
   "version": "1.0.0",
-  "description": "Yoschi's portfolio website",
+  "description": "My personal portfolio website",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
