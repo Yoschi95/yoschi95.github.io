@@ -9,8 +9,8 @@
   width: 100%;
 
   @include respond-to("mobile") {
-    flex-direction: column;
-    align-items: center;
+    //flex-direction: column;
+    //align-items: center;
   }
 }
 
@@ -40,6 +40,7 @@
 
 .header .first-component {
   flex: 0 0 auto;
+  order: 1;
 
   @include respond-to("mobile") {
     margin-top: 1rem;
@@ -49,8 +50,11 @@
 
 .header .second-component {
   flex: 1;
+  order: 2;
 
   @include respond-to("mobile") {
+    order: 3;
+    flex: 0 0 auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
@@ -58,8 +62,11 @@
 
 .header .third-component {
   flex: 0 0 auto;
+  order: 3;
 
   @include respond-to("mobile") {
+    order: 2;
+    flex: 0 0 auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }

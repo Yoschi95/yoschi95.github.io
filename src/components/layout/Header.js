@@ -1,10 +1,10 @@
 import "./Header.scss";
+import { useContext, useEffect, useState } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 import jh_logo from "../../assets/images/logo/jh_logo.svg";
 import Nav from "../sections/Nav";
-
 import LightDarkSwitch from "../shared/LightDarkSwitch";
-import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
+import BurgerMenu from "../shared/BurgerMenu";
 
 function Header() {
   // Define function to scroll to the section when clicking the logo
@@ -16,6 +16,22 @@ function Header() {
     }
   };
 
+  // Get screen size and set isMobile state
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 480);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 480);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
@@ -23,7 +39,7 @@ function Header() {
       <button onClick={scrollToHomeSection} className="logo-button first-component">
         <img src={jh_logo} alt="Joscha Hartmann brand logo" className="header-logo" />
       </button>
-      <Nav className="second-component" />
+      {isMobile ? <BurgerMenu className="second-component" /> : <Nav className="second-component" />}
       <LightDarkSwitch theme={theme} onClick={toggleTheme} className="third-component" />
     </header>
   );
