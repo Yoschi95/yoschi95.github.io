@@ -1,4 +1,5 @@
 @use "/src/styles/variables" as *;
+@use "/src/styles/breakpoints" as *;
 
 .navBarButton {
   background: none;
@@ -7,6 +8,11 @@
   font-size: 18px;
   transition: color 0.3s;
   color: var(--text-color);
+
+  @include respond-to("mobile") {
+    font-size: 24px;
+    font-weight: 800;
+  }
 }
 
 .navBarButton:hover {
