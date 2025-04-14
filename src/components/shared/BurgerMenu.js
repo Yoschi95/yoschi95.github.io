@@ -1,23 +1,21 @@
 import "./BurgerMenu.scss";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { SidebarContext } from "../context/SidebarContext";
+import { setBodyVerticalScrollable } from "../../utils/utils";
 import BurgerIcon from "./BurgerIcon";
 import ExitCross from "../shared/ExitCross";
 import Nav from "../sections/Nav";
 
 function BurgerMenu({ className }) {
-  const [isSideBarOpen, setSideBarOpen] = useState(false);
-
-  const setBodyVerticalScrollable = (isScrollable = true) => {
-    document.body.style.overflowY = isScrollable ? "auto" : "hidden";
-  };
+  const { isSideBarOpen, setIsSideBarOpen } = useContext(SidebarContext);
 
   const HandleExitCrossClick = () => {
-    setSideBarOpen(false);
+    setIsSideBarOpen(false);
     setBodyVerticalScrollable(true);
   };
 
   const HandleBurgerButtonClick = () => {
-    setSideBarOpen(true);
+    setIsSideBarOpen(true);
     setBodyVerticalScrollable(false);
   };
 

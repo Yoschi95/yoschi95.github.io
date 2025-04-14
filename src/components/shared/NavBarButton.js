@@ -1,4 +1,7 @@
 import "./NavBarButton.scss";
+import { useContext } from "react";
+import { SidebarContext } from "../context/SidebarContext";
+import { setBodyVerticalScrollable } from "../../utils/utils";
 
 function NavBarButton({ text, sectionId }) {
   const scrollToSection = () => {
@@ -11,8 +14,16 @@ function NavBarButton({ text, sectionId }) {
     }
   };
 
+  const { setIsSideBarOpen } = useContext(SidebarContext);
+
+  const buttonEventHandler = () => {
+    scrollToSection();
+    setIsSideBarOpen(false);
+    setBodyVerticalScrollable(true);
+  };
+
   return (
-    <button className="navBarButton" onClick={scrollToSection}>
+    <button className="navBarButton" onClick={buttonEventHandler}>
       {text}
     </button>
   );
