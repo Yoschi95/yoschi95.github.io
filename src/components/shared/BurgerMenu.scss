@@ -22,10 +22,9 @@
   right: 0;
   background-color: var(--primary-color);
   overflow-x: hidden;
-  transition: 0.5s;
+  animation: fadeIn-sidebar 0.8s ease;
 }
 
-// TODO: Use relative units like vh, vw here
 .exit-cross-button {
   position: absolute;
   top: 24px;
@@ -39,6 +38,16 @@
 
 .burger-navbar {
   position: absolute;
-  top: 100px;
-  left: 60px;
+  top: 10vh;
+  left: 10vw;
+}
+
+@keyframes fadeIn-sidebar {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 100vh;
+  }
 }

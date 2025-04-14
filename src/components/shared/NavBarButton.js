@@ -17,9 +17,9 @@ function NavBarButton({ text, sectionId }) {
   const { setIsSideBarOpen } = useContext(SidebarContext);
 
   const buttonEventHandler = () => {
-    scrollToSection();
     setIsSideBarOpen(false);
     setBodyVerticalScrollable(true);
+    scrollToSection();
   };
 
   return (

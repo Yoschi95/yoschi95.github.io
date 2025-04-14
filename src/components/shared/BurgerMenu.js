@@ -10,13 +10,13 @@ function BurgerMenu({ className }) {
   const { isSideBarOpen, setIsSideBarOpen } = useContext(SidebarContext);
 
   const HandleExitCrossClick = () => {
-    setIsSideBarOpen(false);
     setBodyVerticalScrollable(true);
+    setIsSideBarOpen(false);
   };
 
   const HandleBurgerButtonClick = () => {
-    setIsSideBarOpen(true);
     setBodyVerticalScrollable(false);
+    setIsSideBarOpen(true);
   };
 
   return (
