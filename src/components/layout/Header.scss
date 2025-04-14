@@ -42,9 +42,7 @@
 
   @include respond-to("mobile") {
     justify-self: center;
-    grid-area: first;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    grid-area: second;
   }
 }
 
@@ -55,8 +53,6 @@
   @include respond-to("mobile") {
     justify-self: center;
     grid-area: third;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
   }
 }
 
@@ -66,8 +62,6 @@
 
   @include respond-to("mobile") {
     justify-self: center;
-    grid-area: second;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    grid-area: first;
   }
 }
