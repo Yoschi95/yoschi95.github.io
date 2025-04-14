@@ -51,7 +51,7 @@
   grid-area: second;
 
   @include respond-to("mobile") {
-    justify-self: center;
+    justify-self: end;
     grid-area: third;
   }
 }
@@ -61,7 +61,7 @@
   grid-area: third;
 
   @include respond-to("mobile") {
-    justify-self: center;
+    justify-self: start;
     grid-area: first;
   }
 }
