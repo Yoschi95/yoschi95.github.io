@@ -4,7 +4,7 @@ import Footer from "./components/layout/Footer";
 import { ThemeProvider } from "./components/context/ThemeContext";
 import { SidebarProvider } from "./components/context/SidebarContext";
 
-function App() {
+const App = () => {
   return (
     <div className="app">
       <ThemeProvider>
@@ -16,6 +16,6 @@ function App() {
       </ThemeProvider>
     </div>
   );
-}
+};
 
 export default App;

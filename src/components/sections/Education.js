@@ -2,7 +2,7 @@ import "./Education.scss";
 import StandardCard from "../shared/StandardCard";
 import educationLogo from "../../assets/images/education/education.svg";
 
-function Education() {
+const Education = () => {
   return (
     <main className="education" id="education">
       <h1>Education</h1>
@@ -62,6 +62,6 @@ function Education() {
       </div>
     </main>
   );
-}
+};
 
 export default Education;

@@ -7,7 +7,7 @@ import Education from "../sections/Education";
 import Contact from "../sections/Contact";
 import "./Main.scss";
 
-function Main() {
+const Main = () => {
   return (
     <main className="main">
       <Home />
@@ -19,6 +19,6 @@ function Main() {
       <Contact />
     </main>
   );
-}
+};
 
 export default Main;

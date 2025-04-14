@@ -1,6 +1,6 @@
 import "./DotMenu.scss";
 
-function DotMenu() {
+const DotMenu = () => {
   return (
     <div className="dot-menu-container">
       <span className="dot"></span>
@@ -8,6 +8,6 @@ function DotMenu() {
       <span className="dot"></span>
     </div>
   );
-}
+};
 
 export default DotMenu;

@@ -6,7 +6,7 @@ import ExitCross from "../shared/ExitCross";
 import webLogo from "../../assets/images/projects/web.svg";
 import gitHubLogo from "../../assets/images/contact/github.svg";
 
-function ProjectCard({ title, description, techStack, gitHubLink, appLink }) {
+const ProjectCard = ({ title, description, techStack, gitHubLink, appLink }) => {
   const [isDefaultMenu, setIsDefaultMenu] = useState(true);
 
   const toggleMenu = () => {
@@ -56,6 +56,6 @@ function ProjectCard({ title, description, techStack, gitHubLink, appLink }) {
       </div>
     </div>
   );
-}
+};
 
 export default ProjectCard;

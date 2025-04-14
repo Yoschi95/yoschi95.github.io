@@ -2,7 +2,7 @@ import "./Experience.scss";
 import StandardCard from "../shared/StandardCard";
 import companyLogo from "../../assets/images/experience/office.svg";
 
-function Experience() {
+const Experience = () => {
   return (
     <main className="experience" id="experience">
       <h1>Experience</h1>
@@ -71,6 +71,6 @@ function Experience() {
       </div>
     </main>
   );
-}
+};
 
 export default Experience;

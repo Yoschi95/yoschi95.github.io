@@ -1,6 +1,6 @@
 import "./BurgerIcon.scss";
 
-function BurgerIcon() {
+const BurgerIcon = () => {
   return (
     <div className="burger-icon">
       <div className="burger-bar"></div>
@@ -8,6 +8,6 @@ function BurgerIcon() {
       <div className="burger-bar"></div>
     </div>
   );
-}
+};
 
 export default BurgerIcon;

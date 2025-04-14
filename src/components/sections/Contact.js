@@ -3,7 +3,7 @@ import github from "../../assets/images/contact/github.svg";
 import linkedin from "../../assets/images/contact/linkedin.svg";
 import ContactForm from "../shared/ContactForm";
 
-function Contact() {
+const Contact = () => {
   return (
     <main className="contact" id="contact">
       <h1>Contact</h1>
@@ -33,6 +33,6 @@ function Contact() {
       </div>
     </main>
   );
-}
+};
 
 export default Contact;

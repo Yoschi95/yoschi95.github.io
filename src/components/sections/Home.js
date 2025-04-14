@@ -3,7 +3,7 @@ import profile_img from "../../assets/images/me/me_real.jpg";
 import StandardButton from "../shared/StandardButton.js";
 import ArrowDown from "../shared/ArrowDown.js";
 
-function Home() {
+const Home = () => {
   // Define function to scroll to the section when clicking the read more button
   const scrollToAboutSection = () => {
     window.history.pushState(null, "", "#about");
@@ -33,6 +33,6 @@ function Home() {
       </div>
     </main>
   );
-}
+};
 
 export default Home;

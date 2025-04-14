@@ -1,6 +1,6 @@
 import "./StandardCard.scss";
 
-function StandardCard({ image, company, job, mainText, caption, link }) {
+const StandardCard = ({ image, company, job, mainText, caption, link }) => {
   return (
     <div className="standard-card">
       <div className="standard-card-head">
@@ -19,6 +19,6 @@ function StandardCard({ image, company, job, mainText, caption, link }) {
       </div>
     </div>
   );
-}
+};
 
 export default StandardCard;

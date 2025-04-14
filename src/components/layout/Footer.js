@@ -2,7 +2,7 @@ import "./Footer.scss";
 import jh_logo from "../../assets/images/logo/jh_logo.svg";
 import ArrowUp from "../shared/ArrowUp.js";
 
-function Footer() {
+const Footer = () => {
   const scrollToHomeSection = () => {
     window.history.pushState(null, "", "#home");
     const targetElement = document.getElementById("home");
@@ -24,6 +24,6 @@ function Footer() {
       </button>
     </footer>
   );
-}
+};
 
 export default Footer;

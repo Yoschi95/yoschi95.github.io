@@ -8,7 +8,7 @@ import img_js from "../../assets/images/skills/js.svg";
 import img_react from "../../assets/images/skills/react.svg";
 import img_git from "../../assets/images/skills/git.svg";
 
-function Skills() {
+const Skills = () => {
   return (
     <main className="skills" id="skills">
       <h1>Skills</h1>
@@ -64,6 +64,6 @@ function Skills() {
       </div>
     </main>
   );
-}
+};
 
 export default Skills;

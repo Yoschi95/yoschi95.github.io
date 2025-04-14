@@ -6,7 +6,7 @@ import Nav from "../sections/Nav";
 import LightDarkSwitch from "../shared/LightDarkSwitch";
 import BurgerMenu from "../shared/BurgerMenu";
 
-function Header() {
+const Header = () => {
   // Define function to scroll to the section when clicking the logo
   const scrollToHomeSection = () => {
     window.history.pushState(null, "", "#home");
@@ -45,6 +45,6 @@ function Header() {
       </div>
     </header>
   );
-}
+};
 
 export default Header;

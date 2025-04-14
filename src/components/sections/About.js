@@ -1,7 +1,7 @@
 import "./About.scss";
 import me_comic from "../../assets/images/me/me_comic.jpg";
 
-function About() {
+const About = () => {
   return (
     <main className="about" id="about">
       <h1>About me</h1>
@@ -43,6 +43,6 @@ function About() {
       </div>
     </main>
   );
-}
+};
 
 export default About;

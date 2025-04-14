@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 import StandardButton from "./StandardButton";
 import { ThemeContext } from "../context/ThemeContext";
 
-function ContactForm() {
+const ContactForm = () => {
   const { theme } = useContext(ThemeContext);
 
   const [formData, setFormData] = useState({
@@ -123,6 +123,6 @@ function ContactForm() {
       <ToastContainer />
     </div>
   );
-}
+};
 
 export default ContactForm;

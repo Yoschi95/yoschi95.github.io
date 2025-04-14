@@ -6,7 +6,7 @@ import BurgerIcon from "./BurgerIcon";
 import ExitCross from "../shared/ExitCross";
 import Nav from "../sections/Nav";
 
-function BurgerMenu({ className }) {
+const BurgerMenu = ({ className }) => {
   const { isSideBarOpen, setIsSideBarOpen } = useContext(SidebarContext);
 
   const HandleExitCrossClick = () => {
@@ -37,6 +37,6 @@ function BurgerMenu({ className }) {
       )}
     </div>
   );
-}
+};
 
 export default BurgerMenu;

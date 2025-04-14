@@ -1,7 +1,7 @@
 import "./Projects.scss";
 import ProjectCard from "../shared/ProjectCard";
 
-function Projects() {
+const Projects = () => {
   return (
     <main className="projects" id="projects">
       <h1>Projects</h1>
@@ -47,6 +47,6 @@ function Projects() {
       </div>
     </main>
   );
-}
+};
 
 export default Projects;

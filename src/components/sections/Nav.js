@@ -2,7 +2,7 @@ import "./Nav.scss";
 import NavBarButton from "../shared/NavBarButton";
 import Resume from "./Resume";
 
-function Nav({ className }) {
+const Nav = ({ className }) => {
   return (
     <nav className={`navbar ${className}`}>
       <ul>
@@ -33,6 +33,6 @@ function Nav({ className }) {
       </ul>
     </nav>
   );
-}
+};
 
 export default Nav;

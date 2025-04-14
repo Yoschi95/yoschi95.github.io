@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { SidebarContext } from "../context/SidebarContext";
 import { setBodyVerticalScrollable } from "../../utils/utils";
 
-function NavBarButton({ text, sectionId }) {
+const NavBarButton = ({ text, sectionId }) => {
   const scrollToSection = () => {
     window.history.pushState(null, "", `#${sectionId}`);
     const targetElement = document.getElementById(sectionId);
@@ -27,6 +27,6 @@ function NavBarButton({ text, sectionId }) {
       {text}
     </button>
   );
-}
+};
 
 export default NavBarButton;

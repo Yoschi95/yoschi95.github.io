@@ -1,6 +1,6 @@
 import "./LightDarkSwitch.scss";
 
-function LightDarkSwitch({ theme, onClick }) {
+const LightDarkSwitch = ({ theme, onClick }) => {
   return (
     <button onClick={onClick} className={`switch-frame ${theme === "dark" ? " night" : ""}`}>
       <div className="notch">
@@ -15,6 +15,6 @@ function LightDarkSwitch({ theme, onClick }) {
       </div>
     </button>
   );
-}
+};
 
 export default LightDarkSwitch;
