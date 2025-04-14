@@ -46,8 +46,8 @@
   object-fit: cover;
 
   @include respond-to("mobile") {
-    width: 200px;
-    height: 200px;
+    width: 60vw;
+    height: 60vw;
     margin-top: 4rem;
     margin-bottom: 4rem;
   }
