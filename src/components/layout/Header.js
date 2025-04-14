@@ -40,7 +40,9 @@ function Header() {
         <img src={jh_logo} alt="Joscha Hartmann brand logo" className="header-logo" />
       </button>
       {isMobile ? <BurgerMenu className="second-component" /> : <Nav className="second-component" />}
-      <LightDarkSwitch theme={theme} onClick={toggleTheme} className="third-component" />
+      <div className="third-component">
+        <LightDarkSwitch theme={theme} onClick={toggleTheme} />
+      </div>
     </header>
   );
 }
