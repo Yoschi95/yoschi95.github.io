@@ -1,3 +1,6 @@
+@use "/src/styles/variables" as *;
+@use "/src/styles/breakpoints" as *;
+
 .burger-menu {
   display: flex;
   justify-content: center;
@@ -17,7 +20,7 @@
   width: 100vw;
   top: 0;
   right: 0;
-  background-color: #ededed;
+  background-color: var(--primary-color);
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -36,5 +39,5 @@
 .burger-navbar {
   position: absolute;
   top: 100px;
-  left: 80px;
+  left: 60px;
 }

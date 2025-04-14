@@ -7,11 +7,25 @@ import Nav from "../sections/Nav";
 function BurgerMenu({ className }) {
   const [isSideBarOpen, setSideBarOpen] = useState(false);
 
+  const setBodyVerticalScrollable = (isScrollable = true) => {
+    document.body.style.overflowY = isScrollable ? "auto" : "hidden";
+  };
+
+  const HandleExitCrossClick = () => {
+    setSideBarOpen(false);
+    setBodyVerticalScrollable(true);
+  };
+
+  const HandleBurgerButtonClick = () => {
+    setSideBarOpen(true);
+    setBodyVerticalScrollable(false);
+  };
+
   return (
     <div className={`${className} burger-menu`}>
       {isSideBarOpen ? (
         <div className="burger-sidebar">
-          <button className="exit-cross-button" onClick={() => setSideBarOpen(false)}>
+          <button className="exit-cross-button" onClick={HandleExitCrossClick}>
             <ExitCross />
           </button>
           <div className="burger-navbar">
@@ -19,7 +33,7 @@ function BurgerMenu({ className }) {
           </div>
         </div>
       ) : (
-        <button className="burger-button" onClick={() => setSideBarOpen(true)}>
+        <button className="burger-button" onClick={HandleBurgerButtonClick}>
           <BurgerIcon />
         </button>
       )}
