@@ -12,6 +12,7 @@
   --card-text-color: black;
   --project-card-bg-color: #ededed;
   --exit-cross-border-color: black;
+  --exit-cross-border-color-inverted: black;
 }
 
 [data-theme="dark"] {
@@ -28,6 +29,7 @@
   --card-text-color: #383532;
   --project-card-bg-color: #ededed;
   --exit-cross-border-color: #383532;
+  --exit-cross-border-color-inverted: #ededed;
 }
 
 $primary-font: "Inter";

@@ -8,6 +8,10 @@
   transform-origin: center;
 }
 
+.invertedDarkMode {
+  background-color: var(--exit-cross-border-color-inverted);
+}
+
 .cross-line-1 {
   transform: translate(-50%, -50%) rotate(45deg);
 }

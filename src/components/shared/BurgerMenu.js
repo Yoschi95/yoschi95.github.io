@@ -24,7 +24,7 @@ function BurgerMenu({ className }) {
       {isSideBarOpen ? (
         <div className="burger-sidebar">
           <button className="exit-cross-button" onClick={HandleExitCrossClick}>
-            <ExitCross />
+            <ExitCross invertedDarkMode />
           </button>
           <div className="burger-navbar">
             <Nav />
