@@ -30,7 +30,7 @@ Welcome to my personal website, built to showcase my skills, projects and experi
 - **Skills** - Key technical skills and tools
 - **Education** - Academic background, also displayed with cards
 - **Projects** - Selected projects with live demos and GitHub links
-- **Contact** - Social media links and a scontact form
+- **Contact** - Social media links and a contact form
 
 ## Getting Started
 
