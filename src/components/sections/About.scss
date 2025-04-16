@@ -15,7 +15,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: 2rem;
 
   @include respond-to("mobile") {
     flex-direction: column;
@@ -33,6 +33,7 @@
 
 .about-flexbox .flex-item-2 {
   order: 2;
+  align-self: center;
 
   @include respond-to("mobile") {
     order: 1;
@@ -48,8 +49,7 @@
   @include respond-to("mobile") {
     width: 60vw;
     height: 60vw;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 }
 
