@@ -11,3 +11,5 @@
 !src/**
 !.github/
 !.github/**
+!robots.txt
+!sitemap.xml
