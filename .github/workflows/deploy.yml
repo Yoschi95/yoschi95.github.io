@@ -32,6 +32,9 @@ jobs:
           EMAILJS_TEMPLATE_ID: ${{secrets.EMAILJS_TEMPLATE_ID}}
         run: npm run build
 
+      - name: Copy static files
+        run: npm run copy-static-files
+
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v3
         with:
