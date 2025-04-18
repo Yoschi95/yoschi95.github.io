@@ -20,6 +20,10 @@ body {
   margin-right: 5vw;
   margin-bottom: 1vh;
   overflow-x: hidden;
+
+  @include respond-to("mobile") {
+    margin-top: 2vh;
+  }
 }
 
 h1 {
