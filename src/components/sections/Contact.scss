@@ -32,6 +32,10 @@
     margin-left: 0;
     width: 100%;
   }
+
+  @include respond-to("tablet") {
+    margin-left: 5rem;
+  }
 }
 
 .contactFlexboxRight h2 {

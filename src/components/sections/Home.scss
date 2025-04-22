@@ -47,6 +47,11 @@
     height: 60vw;
     margin-bottom: 2rem;
   }
+
+  @include respond-to("tablet") {
+    width: 40vw;
+    height: 40vw;
+  }
 }
 
 .home-text {
