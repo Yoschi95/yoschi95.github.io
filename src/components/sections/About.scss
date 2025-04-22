@@ -46,15 +46,15 @@
   border-radius: 50%;
   object-fit: cover;
 
+  @include respond-to("tablet") {
+    width: 40vw;
+    height: 40vw;
+  }
+
   @include respond-to("mobile") {
     width: 60vw;
     height: 60vw;
     margin-bottom: 2rem;
-  }
-
-  @include respond-to("tablet") {
-    width: 40vw;
-    height: 40vw;
   }
 }
 

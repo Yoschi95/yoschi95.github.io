@@ -13,12 +13,12 @@
   box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 
-  @include respond-to("mobile") {
-    width: 100%;
-  }
-
   @include respond-to("tablet") {
     width: 40vw;
+  }
+
+  @include respond-to("mobile") {
+    width: 100%;
   }
 }
 

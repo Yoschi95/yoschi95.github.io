@@ -15,12 +15,12 @@
   overflow: hidden;
   color: var(--card-text-color);
 
-  @include respond-to("mobile") {
-    width: 100%;
-  }
-
   @include respond-to("tablet") {
     width: 40vw;
+  }
+
+  @include respond-to("mobile") {
+    width: 100%;
   }
 }
 
