@@ -8,6 +8,10 @@
   align-items: center;
   justify-items: center;
 
+  @include respond-to("tablet") {
+    text-align: center;
+  }
+
   @include respond-to("mobile") {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, auto);
