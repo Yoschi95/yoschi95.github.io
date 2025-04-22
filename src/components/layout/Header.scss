@@ -54,6 +54,11 @@
   justify-self: center;
   grid-area: second;
 
+  @include respond-to("tablet") {
+    justify-self: end;
+    grid-area: third;
+  }
+
   @include respond-to("mobile") {
     justify-self: end;
     grid-area: third;
@@ -63,6 +68,11 @@
 .header .third-component {
   justify-self: end;
   grid-area: third;
+
+  @include respond-to("tablet") {
+    justify-self: center;
+    grid-area: second;
+  }
 
   @include respond-to("mobile") {
     justify-self: start;
