@@ -37,12 +37,23 @@
   padding: 1rem;
   box-sizing: border-box;
 
+  @include respond-to("tablet") {
+    padding: 0.5rem;
+  }
+
   @include respond-to("mobile") {
     padding: 0.5rem;
   }
 }
 
 .standard-card-head p {
+  @include respond-to("tablet") {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 14px;
+    font-weight: 800;
+  }
+
   @include respond-to("mobile") {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
