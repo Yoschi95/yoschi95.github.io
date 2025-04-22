@@ -20,6 +20,10 @@
   width: 7vw;
   height: auto;
 
+  @include respond-to("tablet") {
+    width: 10vw;
+  }
+
   @include respond-to("mobile") {
     width: 25vw;
   }
